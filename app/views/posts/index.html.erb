@@ -1,0 +1,8 @@
+<h1>POSTS</h1>
+<% @posts.each do |post| %>
+<div class="messages">
+  <p class="content"><%= post.content %></p>
+  <p class="time"><%= post.created_at %></p>
+</div>
+<% end %>
+<%= link_to 'New Post', "posts/new" %>
